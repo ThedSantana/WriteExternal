@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.apollo.writeext.MainActivity" >
+    <TextView
+        android:id="@+id/tw_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/tw_comment" />
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/tw_comment"
+        android:layout_below="@+id/tw_comment"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save_txt"
+        android:layout_below="@+id/et_comment"
+        android:layout_alignRight="@+id/et_comment"
+        android:tag="red"
+        />
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_load_txt"
+        android:layout_below="@+id/et_comment"
+        android:layout_alignLeft="@+id/et_comment"
+        />
+    <TextView
+        android:id="@+id/summary_tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_save"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
